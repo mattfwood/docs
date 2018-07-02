@@ -122,10 +122,10 @@ Each file is a test suite, which defines a group of tests of same behavior. For 
 
 [source, js]
 ----
-const Suite = use('Test/Suite')('User registeration')
+const Suite = use('Test/Suite')('User registration')
 
 // or destructuring
-const { test } = use('Test/Suite')('User registeration')
+const { test } = use('Test/Suite')('User registration')
 ----
 
 The `test` function obtained from the Suite instance is used for defining tests.
@@ -144,7 +144,7 @@ For example: Using the browser to run your test.
 
 [source, js]
 ----
-const { test, trait } = use('Test/Suite')('User registeration')
+const { test, trait } = use('Test/Suite')('User registration')
 
 trait('Test/Browser')
 
@@ -161,7 +161,7 @@ NOTE: You do not have to create a trait for everything. Majority of the work can
 
 [source, js]
 ----
-const { test, trait } = use('Test/Suite')('User registeration')
+const { test, trait } = use('Test/Suite')('User registration')
 
 trait(function (suite) {
   suite.Context.getter('foo', () => {
@@ -184,7 +184,7 @@ Each suite has some lifecycle hooks, which can be used to perform repetitive tas
 
 [source, js]
 ----
-const Suite = use('Test/Suite')('User registeration')
+const Suite = use('Test/Suite')('User registration')
 
 const { before, beforeEach, after, afterEach } = Suite
 
